@@ -1,0 +1,770 @@
+@import 'fonts';
+@import 'global';
+
+.header{
+    position: relative;
+    &-top{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-logo{
+        cursor: pointer;
+    }
+    &-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 42px;
+       
+    }
+    &-menu__item{
+        font-size: 16px;
+        line-height: 24px;
+        @extend %poppins;
+        &:hover{
+            transition: all 0.3s;
+            color: #F78434;
+        }
+        &_active{
+            color: #F78434;
+            @extend %poppinsBold;
+        }
+    }
+    &-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            @extend %poppinsBold;
+            font-size: 54px;
+            line-height: 79px;
+            letter-spacing: 0.8px;
+            z-index: 999;
+            padding-bottom: 25px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 27px;
+            @extend %poppins;
+            letter-spacing: 1.15px;
+            max-width: 467px;
+        }
+        input{
+            background-image: url(../images/input-img.png);
+            background-repeat: no-repeat;
+            background-size: 25px;
+            background-position: left 15px top 15px;
+            @extend %poppins;
+            border: 1px solid #fff;
+            box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+            border-radius: 29px;
+            color: #BBBBBB;
+            padding: 16px 160px 18px 70px;
+            width: 100%;
+            height: 48px;
+            outline: none;
+        }
+        button{
+            padding: 18px 32px;
+            height: 48px;
+            font-size: 16px;
+            line-height: 24px;
+            @extend %poppinsBold;
+            background: #F78434;
+            border-radius: 29px;
+            border: 1px solid #F78434;
+            color: #FFFFFF;
+            position: absolute;
+            right: 0;
+            top: 35%;
+            transform: translateY(50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover{
+                background-color: #fff;
+                color: #F78434;
+            }
+        }
+    }
+    &-content__form{
+      
+       
+        padding-top: 40px;
+        position: relative;
+        width: 459px;
+        height: 48px;
+    }
+    &-content__img{
+        z-index: -9;
+    }
+    &-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 0;
+    }
+}
+
+.menu-btn{
+    visibility: hidden;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.x-btn{
+    
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    color: red;
+   visibility: hidden;
+   overflow: hidden;
+   img{
+    height: 50px;
+    width: 50px;
+   }
+}
+
+
+.space{
+    padding-top: 100px;
+        padding-bottom: 140px;
+    &-slider__item{
+        display: grid;
+        gap: 180px;
+        grid-template-columns: repeat(2, 1fr );
+    }
+    &-img{
+        display: flex!important;
+        align-items: center;
+        gap: 50px; 
+        width: 800px;
+        img{
+            height: 550px;
+            width: 385px!important;
+            object-fit: cover;
+            margin-right: 40px;
+            &:last-child{
+            }
+        }
+        
+    }
+
+    .slick-slide{
+        width: unset!important;
+    }
+    &-img__text{
+        position: absolute;
+        right: 50%;
+        top: 200%;
+        max-width: 300px;
+        background-color: #fff;
+        padding: 32px 30px 32px 94px;
+        background: #FFFFFF;
+        border-radius: 15px;
+        background-image: url(../images/space-logo.png);
+        background-repeat: no-repeat;
+        background-position: 30px center;
+        span{
+            color: #323232;
+            font-size: 16px;
+            line-height: 27px;
+            @extend %poppins;
+
+            letter-spacing: 1.15px;
+
+            color: #323232;
+        }
+    }
+    &-content{
+        display: flex;
+        
+        justify-content: center;
+        flex-direction: column
+        
+      
+    }
+    &-content__title{
+        font-size: 42px;
+        line-height: 62px;
+        @extend %poppins;
+        letter-spacing: 0.8px;
+        color: #323232;
+        max-width: 374px;
+    }
+    &-content__text{
+        font-size: 16px;
+        line-height: 27px;
+        @extend %poppins;
+        letter-spacing: 1.15px;
+        max-width: 374px;
+        color: #323232;
+        padding-bottom: 20px;
+    }
+    &-btn{
+            padding: 18px 40px;
+            font-size: 16px;
+            line-height: 24px;
+            @extend %poppinsBold;
+            background: #F78434;
+            border-radius: 29px;
+            border: 1px solid #F78434;
+            color: #FFFFFF;
+            transition: all 0.3s;
+            &:hover{
+                background-color: #fff;
+                color: #F78434;
+            }
+    }
+}
+
+    
+
+
+
+
+.product{
+    padding-bottom: 145px;
+    &-bg{
+        background-color: #58BEBF;
+        border-radius: 20px;
+    }
+    &-img{
+        padding: 50px 0 0 0;
+        
+      img{
+        box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+        border-radius: 0 21.6px 0 0;
+      }
+    }
+    &-wrapper{
+        display: flex;
+        gap: 59px;
+        background-image: url('../images/product-bg2.png');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+    &-content{
+        display: flex;
+        align-items: center;
+        background-image: url('../images/product-bg1.png');
+        background-repeat: no-repeat;
+        background-position: top right ;
+       
+    
+ 
+        h1{
+            font-size: 42px;
+            line-height: 62px;
+            letter-spacing: 0.8px;
+            @extend %poppinsBold;
+            color: #fff;
+            max-width: 342px;
+           
+        }
+        p{
+            font-size: 16px;
+            line-height: 27px;
+            @extend %poppins;
+            max-width: 342px;
+            letter-spacing: 1.15px;
+            padding-bottom: 30px;
+            color: #FFFFFF;
+        }
+        button{
+            padding: 18px 40px;
+            font-size: 16px;
+            line-height: 24px;
+            @extend %poppinsBold;
+            
+            border-radius: 29px;
+            
+            
+        }
+        
+    }
+    &-btn{
+        background: #F78434;
+        border: 1px solid #F78434;
+        color: #FFFFFF;
+        transition: all 0.3s;
+
+        &:hover{
+            background-color: #fff;
+            border: 1px solid #FFFFFF;
+            color: #F78434;
+        }
+    }
+    &-watch{
+        background: #fff;
+        color: black;
+        border: 1px solid #FFFFFF;
+        transition: all 0.3s;
+
+        &:hover{
+            background-color: #F78434;
+            color: #fff;
+            border: 1px solid #F78434;
+        }
+    }
+}
+
+
+
+
+
+
+.serve{
+    padding-bottom: 110px;
+    @extend %poppins;
+    &-title{
+        color: #323232;
+        h1{
+            font-size: 42px;
+            line-height: 62px;
+            letter-spacing: 0.8px;
+            @extend %poppinsBold;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+    }
+
+&-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    img{
+        padding-top: 40px;
+        padding-bottom: 25px;
+    }
+    h1{
+        font-size: 42px;
+        line-height: 63px;
+        @extend %poppinsBold;
+        letter-spacing: 0.8px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+     }
+     span{
+         
+         font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: 1.15px;
+        color: #FFFFFF;
+        padding: 0 88px 25px 88px;
+        
+     }
+     button{
+         margin-bottom: 40px;
+         background: #FFFFFF;
+        border: 1px solid #fff;
+        color:#F78434;
+        transition: all 0.3s;
+        padding: 18px 40px;
+        font-size: 16px;
+        line-height: 24px;
+        @extend %poppinsBold;
+        cursor: pointer;
+        
+        border-radius: 29px;
+        &:hover{
+            background-color:#F78434;
+            color: #FFFFFF;
+        }
+    
+     }
+}
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 45px;
+    }
+
+    &-buyers{
+        margin: auto;
+        color: #fff;
+        background: #F78434;
+        box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+        border-radius: 10px; 
+        @extend %poppins;
+    }
+    &-sellers{
+        h1{
+            color: black;
+            span{
+                color: black;
+            }
+        }
+    }
+    &-sellimg{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    img{
+        padding-top: 40px;
+        padding-bottom: 25px;
+    }
+    h1{
+        font-size: 42px;
+        line-height: 63px;
+        @extend %poppinsBold;
+        letter-spacing: 0.8px;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+     }
+     span{
+         @extend %poppins;
+         font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: 1.15px;
+        color: #000;
+        padding: 0 88px 25px 88px;
+        
+     }
+     button{
+         margin-bottom: 40px;
+         background: #FFFFFF;
+        border: 1px solid #fff;
+        color:#F78434;
+        transition: all 0.3s;
+        padding: 18px 40px;
+        font-size: 16px;
+        line-height: 24px;
+        @extend %poppinsBold;
+        cursor: pointer;
+        border-radius: 29px;
+        &:hover{
+            background-color:#F78434;
+            color: #FFFFFF;
+        }
+    
+     }
+    }
+}
+
+
+
+
+
+.choose{
+    padding-bottom: 100px;
+    h1{
+        padding-bottom: 60px;
+        font-size: 42px;
+        line-height: 62px;
+        letter-spacing: 0.8px;
+        @extend %poppinsBold;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    &-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+    }
+    &-img{
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(88, 190, 191, 0.2);
+        border-radius: 50%;
+        padding: 21px 15px;
+        transition: 0.3s;
+        
+    }
+    &-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        h3{
+            font-size: 28px;
+            line-height: 42px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            color: #323232;
+            @extend %poppinsBold;
+        }
+        p{
+            text-align: center;
+            font-size: 16px;
+            line-height: 27px;
+            @extend %poppins;
+
+            text-align: center;
+            letter-spacing: 1.15px;
+
+            color: #323232;
+        }
+
+        &:hover{
+            .choose-img{
+                background: #F78434;
+                img{
+                    filter: brightness(100);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.words{
+    padding-bottom: 40px;
+    &-top{
+        display: flex;
+        align-items: center;
+        gap: 260px;
+        padding-bottom: 60px;
+    }
+    &-title{
+        h1{
+        @extend %poppinsBold;
+        font-size: 42px;
+        line-height: 62px;
+        color: #323232;
+        letter-spacing: 0.8px;
+        }
+        
+    }
+    &-text{
+        p{
+            font-size: 16px;
+            line-height: 27px;
+            letter-spacing: 1.15px;
+            color: #606060;
+            @extend %poppins;
+            
+        }
+
+    }
+    &-box{
+        // max-width: 350px;
+        // height: 425px;
+        filter: drop-shadow(0px 10px 52px rgba(0, 0, 0, 0.08));
+        
+    }
+   
+    &-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        &-img{
+            position: relative;
+        
+        img{
+            border-radius: 5px 5px 0px 0px;
+           
+        }
+    }
+        p{
+            @extend %poppins;
+            font-size: 16px;
+            line-height: 27px;
+            letter-spacing: 1.15px;
+            color: #323232;
+            max-width:  292px;
+            padding: 30px 0 23px 0;
+        }
+        h3{
+            font-size: 18px;
+            line-height: 27px;
+            color: #323232;
+            @extend %poppinsBold;
+            letter-spacing: 0.6px;
+         
+        }
+      
+        .green{
+            color: #58BEBF;
+            font-size: 16px;
+            line-height: 27px;
+            letter-spacing: 1.15px;
+            @extend %poppins;
+        }
+        .orange{
+            color: #F78434;
+            font-size: 16px;
+            line-height: 27px;
+            letter-spacing: 1.15px;
+            @extend %poppins;
+        }
+    }
+    &-play{
+        position: absolute;
+        right: 10px;
+        top: 30%;
+        background: #FFFFFF;
+        border-radius: 50%;
+        padding: 18px 20px;
+        cursor: pointer;
+        img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &-lyon{
+        position: relative;
+    }
+    &-circle{
+        position: absolute;
+        top: -40px;
+        right: -40px;
+        
+    }
+}
+
+
+.expert{
+    background-image: url(../images/expert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    
+    margin-bottom: 100px;
+
+
+    &-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+    &-text{
+        max-width: 361px;
+        height: 170px;
+        h1{
+            font-size: 42px;
+            line-height: 62px;
+            letter-spacing: 0.8px;
+            color: #FFFFFF;
+            @extend %poppinsBold;
+            padding-bottom: 15px;
+        }
+        span{
+            font-size: 16px;
+            line-height: 27px;
+            letter-spacing: 1.15px;
+            @extend %poppins;
+        }
+       
+    }
+    &-btn{
+        margin-top: 30px;
+        background: #FFFFFF;
+        border: 1px solid #fff;
+        color:#F78434;
+        transition: all 0.3s;
+        padding: 18px 40px;
+        font-size: 16px;
+        line-height: 24px;
+        @extend %poppinsBold;
+        cursor: pointer;
+        border-radius: 29px;
+        &:hover{
+            background-color:#F78434;
+            color: #FFFFFF;
+        }
+    }
+        &-img{
+           
+            img{
+                 background-size: contain;
+             }
+        }
+        
+    
+}
+
+
+
+
+.footer{
+    
+    &-wrapper{
+        padding-bottom: 100px;
+        display: flex;
+        justify-content:  center;
+        gap: 100px;
+
+        h3{
+            padding-bottom: 20px;
+            font-size: 21px;
+            line-height: 31px;
+            letter-spacing: 0.5px;
+            color: #323232;
+            @extend %poppinsBold
+        }
+        ul{
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 27px;
+            letter-spacing: 0.5px;
+            color: #323232;
+            @extend %poppins;
+            
+
+            li{
+            padding-bottom: 15px;
+            }
+        }
+    }
+    &-logo{
+        max-width: 306px;
+        margin-right: 160px;
+        h5{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 27px;
+            letter-spacing: 1.15px;
+            color: #323232;
+            @extend %poppins;
+            padding-top: 15px;
+        }
+    }
+    &-socials{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding-top: 40px;
+    }
+}
+
+
+
+
+
+
+
+@import 'media';

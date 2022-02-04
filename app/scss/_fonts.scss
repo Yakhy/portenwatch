@@ -1,0 +1,22 @@
+@font-face{
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url(../fonts/AnyConv.com__Poppins-Bold.woff2) format('woff2'),
+         url(../fonts/AnyConv.com__Poppins-Regular.woff) format('woff');
+ }
+ %poppins{
+    font-family: "Poppins";
+    font-weight: 400;
+ }
+
+
+ @font-face{
+    font-family: 'PoppinsBold';
+    font-weight: 700;
+    src: url(../fonts/AnyConv.com__Poppins-Bold.woff2) format('woff2'),
+         url(../fonts/AnyConv.com__Poppins-Bold.woff) format('woff');
+ }
+ %poppinsBold{
+    font-family: "PoppinsBold";
+    font-weight: 700;
+ }
